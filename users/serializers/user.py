@@ -28,7 +28,8 @@ class UserRetrieveSerializer(UserSerializer):
         fields = ['id', 'phone_number', 'email', 'first_name', 'last_name', 'patronymic']
 
 
-class UserResetPasswordSerializer(UserSerializer):
+class UserResetPasswordSerializer(serializers.Serializer):
+    identifier = serializers.CharField()
+
     class Meta:
-        model = CustomUser
         fields = ['identifier']
