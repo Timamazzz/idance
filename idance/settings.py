@@ -150,11 +150,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.CustomUser'
 
 EMAIL_BACKEND = 'post_office.EmailBackend'
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_PORT = 2525
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
 DEFAULT_FROM_EMAIL = 'timama.feik@mail.ru'
-EMAIL_USE_SSL = True
-EMAIL_USE_TLS = False
-EMAIL_TIMEOUT = 30
-EMAIL_HOST = 'smtps.dashasender.ru'
-EMAIL_PORT = 465
 EMAIL_HOST_USER = 'timama.feik@mail.ru'
-EMAIL_HOST_PASSWORD = '310913_zZz'
+EMAIL_HOST_PASSWORD = 'zTSkMrHhArxtaJz7RiP3'

@@ -41,7 +41,7 @@ def reset_password(request):
                 html_message = f'Ваш новый пароль: {new_password}'
 
                 mail.send(
-                    email,
+                    identifier,
                     settings.DEFAULT_FROM_EMAIL,
                     subject=subject,
                     message=message,
