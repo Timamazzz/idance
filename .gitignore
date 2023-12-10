@@ -1,0 +1,26 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Docker
+docker-compose.yml
+Dockerfile
+
+# Virtual Environment
+venv/
+env/
+
+# IDE (например, PyCharm)
+.idea/
+
+# Локальные настройки Django
+*.log
+db.sqlite3
+
+# Файлы миграции Django
+**/migrations/*.py
+**/migrations/*.pyc
